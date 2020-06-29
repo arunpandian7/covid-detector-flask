@@ -1,16 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
 	<form class="form-signin" method=post enctype=multipart/form-data>
-		<h1 class="h2 mb-6 font-weight-normal">COVID-19 Detector AI</h1>
-		<h5 class="h5 mb-4 font-weight-light text-muted">A Deep Learning based X-ray Diagnosis App</h4>
-		
-		<h2 class="h4 mb-6 font-weight-normal">Please Upload The Image</h2>
+		<h1 class="h1 mb-6 ">🧑‍⚕️ <br>COVID-19 Detector AI</h1>
+		<h5 class="h5 mb-4 font-weight-light ">A Deep Learning based X-ray Diagnosis App <br> built with PyTorch, Flask and Bootstrap</h4>
+		<p class="mb-3 notes">⚠️ Note: Upload atmost one image of either class (COVID Positive or Negative), since this app perform classification task not detection.</p>
+		<h2 class="h4 mb-6 font-weight-normal">📤 Upload the Chest X-ray Image</h2>
 		<input type="file" name="file" class="form-control-file" id="inputfile"  onchange="preview_image(event)">
 		<br />
 		<img id="output-image" class="rounded mx-auto d-block"/>
 		<button class="btn btn-lg btn-primary btn-block" id="submit-btn" type="submit">Upload</button>
-		
-		<p class="mt-4 mb-3 text-muted">Built by <a href="https://arunpandian7.github.io">Arun Pandian R</a></p>
+		<p class="mt-3 mb-3 credits">GitHub <a href="">Repo</a></p>
+		<p class=" mb-3 credits" >Built by <a href="https://arunpandian7.github.io">Arun Pandian R</a></p>
 		<img class="logo-img" src="static/logo.png"><img>
 	</form>
 	
