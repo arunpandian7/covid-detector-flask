@@ -5,7 +5,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, redirect
 from torch.autograd import Variable
 from torchvision import models, transforms
 from PIL import Image
