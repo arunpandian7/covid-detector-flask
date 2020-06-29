@@ -13,6 +13,8 @@ COVID-19 DETECTOR AI
 
 
 > ## ℹ️ This repository is a Flask version of previous iteration for the sake of deployment, which you can refer [here]([https://github.com/arunpandian7/covid-19-detection](https://github.com/arunpandian7/covid-19-detection)) 
+
+### Live Demo : [Heroku App](https://covid-xray-detector.herokuapp.com/)
 ## Tech Stack
 - PyTorch (DL Model)
 - OpenCV 
