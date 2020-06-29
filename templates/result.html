@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+	<form class="form-signin" method=post enctype=multipart/form-data>
+		{% if name == "normal"%}
+			<h1 class="h1 mb-3 font-weight-normal"> Result : Normal </h1>
+		{% else %}
+			<h1 class="h1 mb-3 font-weight-normal"> Result : COVID Positive</h5>
+		{% endif %}
+		<img class="logo-img" src="static/logo.png"><img>
+		<p class="mt-5 mb-3 text-muted">Powered by PyTorch, Flask, and Bootstrap.</p>
+		
+	</form>
+{% endblock %}
