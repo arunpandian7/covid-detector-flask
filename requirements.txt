@@ -1,0 +1,13 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torchvision==0.6.1+cpu
+torch==1.5.1+cpu
+numpy==1.17.2
+opencv_contrib_python==4.2.0.34
+Pillow==7.1.2
+Click==7.0
+Flask==1.1.1
+gunicorn==19.9.0
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+Werkzeug==0.15.6
