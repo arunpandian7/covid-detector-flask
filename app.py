@@ -43,11 +43,11 @@ def transform_image(image_bytes):
 	image = Image.open(io.BytesIO(image_bytes))
 	image = np.array(image)
 	if  image.shape[-1] == 4:
-		image_cv = cv2.cvtColor(image, cv2.COLOR_RGBA2BGR)
+		image_cv = cv2.cvtColor(image, cv2.COLOR_RGBA2RGB)
 	if  image.shape[-1] == 3:
-		image_cv = cv2.cvtColor(image, cv2.COLOR_BGR2BGR)
+		image_cv = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 	if  len(image.shape)== 2:
-		image_cv = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
+		image_cv = cv2.cvtColor(image, cv2.COLOR_GRAY2RGB)
 	return test_transforms(image_cv).unsqueeze(0)
 
 def get_prediction(image_bytes):
